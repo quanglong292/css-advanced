@@ -85,7 +85,7 @@ const ViewBirthdayGift = () => {
               {IMAGE_URL.map((i) => (
                 <img src={i} key={i} alt="" className="max-w-full" />
               ))}
-            </div>
+            </div> 
 
             <button onClick={() => setOpenLetter(false)} className="bg-pink-400 px-4 py-1 rounded-lg text-white w-full my-4">Đóng</button>
           </div>
