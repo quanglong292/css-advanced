@@ -98,3 +98,30 @@ body {
     transform: translateY(-50px);
     transition-delay: 0.5s;
 }
+
+.full-letter {
+    @apply w-full h-screen absolute top-0 left-0 z-10 bg-slate-500/50 flex justify-center items-center;
+
+    .content {
+        @apply bg-white p-8 rounded-lg mx-4 md:w-1/2 max-h-screen my-4 overflow-auto;
+
+        animation: letter-popup;
+        animation-duration: 2s;
+
+        p {
+            font-family: cursive;
+            animation: letter-popup;
+            animation-duration: 3s;
+            @apply my-2;
+        }
+    }
+}
+
+@keyframes letter-popup {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
